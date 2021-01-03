@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+
+<body>
+    <form action="">
+
+        <!-- stored using value attrib -->
+        <!-- same decision using name attrib  -->
+        <div>
+            <label for="fname">FirstName:</label>
+            <input id="fname" type="text" placeholder="FirstName">
+
+            <label for="lname">LastName:</label>
+            <input id="lname" type="text" placeholder="LastName">
+        </div>
+        <div>
+            <label for="race">Select a Race:</label>
+        </div>
+        <div>
+            <input type="radio" name="type" id="race" value="Fun Run 5k">
+            <label for="race">Fun Run 5k</label>
+        </div>
+        <div>
+            <input type="radio" name="type" id="race" value="Half Marathon" required>
+            <label for="race">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="type" id="race" value="Full Marathon" required>
+            <label for="race">Full Marathon</label>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" pattern=".{5,10}" required title="5 to 10 characters">
+        </div>
+        <div>
+            <label for="agegroup ">Select Age Group</label>
+            <select id="agegroup " name="agegroup">
+                <option value="1">under 18</option>
+                <option value="2 ">18 - 30</option>
+                <option value="3 ">30 - 50</option>
+                <option value="4 ">50+</option>
+            </select>
+        </div>
+        <button>Register!</button>
+    </form>
+</body>
+
+</html>
