@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <form action="">
+
+        <!-- stored using value attrib -->
+        <!-- same decision using name attrib  -->
+        <div>
+            <label for="fname">FirstName:</label>
+            <input id="fname" type="text" placeholder="FirstName">
+
+            <label for="lname">LastName:</label>
+            <input id="lname" type="text" placeholder="LastName">
+        </div>
+
+
+        <div>
+            <label for="male">Male:</label>
+            <input type="radio" name="gender" id="male" value="male">
+
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+
+            <label for="other">Others:</label>
+            <input type="radio" name="gender" id="other" value="other" required>
+        </div>
+
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" pattern=".{5,10}" required title="5 to 10 characters">
+        </div>
+
+
+        <div>
+            <label for="birthmonth ">Birthday</label>
+
+            <select id="birthmonth " name="DOBDay ">
+            <option>- Day -</option>
+            <option value="1 ">1</option>
+            <option value="2 ">2</option>
+            <option value="3 ">3</option>
+        </select>
+
+            <select id="birthmonth " name="DOBMonth ">
+            <option>- Month -</option>
+            <option value="January ">January</option>
+            <option value="Febuary ">Febuary</option>
+            <option value="March ">March</option>
+        </select>
+
+            <select id="birthmonth " name="DOBYear ">
+            <option>- Year -</option>
+            <option value="2020 ">2020</option>
+            <option value="2019 ">2019</option>
+            <option value="2018 ">2018</option>
+        </select>
+
+        </div>
+
+        <div>
+            <label for="termsandcondition "> I agree to the terms and conditions</label>
+
+            <input type="checkbox" name="checkbox" id="termsandcondition">
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
